@@ -136,7 +136,6 @@ public class DamageTracker {
     }
 
     private static boolean isValidEntity(LivingEntity entity) {
-        if (!entity.level().isClientSide()) return false;
         if (CLIENT.player == null) return false;
         if (entity instanceof ArmorStand) return false;
 
